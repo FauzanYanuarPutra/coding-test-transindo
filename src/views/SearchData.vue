@@ -2,7 +2,7 @@
 
   <div class="w-[95%] sm:w-[80%] lg:w-[1440px] lg:px-[120px]">
     <div class="mb-20 bg-white flex justify-between items-center rounded-md p-5 shadow-xl">
-      <div class="w-[100%] bg-black flex">
+      <div class="w-[100%]  flex">
         <Multiselect
           v-model="cariData"
           mode="tags"
@@ -12,7 +12,7 @@
           :options="formattedOptions"
           :multiple="true"
           :taggable="true"
-          placeholder="Cari..."
+          placeholder="Cari data yang diperlukan"
         />
       </div>
       <div class="pl-5 font-black cursor-pointer" @click="getSelectedOptions">Cari</div>
