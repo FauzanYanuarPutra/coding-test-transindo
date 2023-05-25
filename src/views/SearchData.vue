@@ -12,7 +12,7 @@
           :options="formattedOptions"
           :multiple="true"
           :taggable="true"
-          placeholder="Cari data yang diperlukan"
+          placeholder="Cari data..."
         />
       </div>
     </div>
