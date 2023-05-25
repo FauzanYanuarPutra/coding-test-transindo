@@ -93,7 +93,7 @@
     {
       "id": 7,
       "company": "Shortly",
-      "logo": "src/assetsshortly.svg",
+      "logo": "assetsshortly.svg",
       "new": false,
       "featured": false,
       "position": "Junior Developer",
