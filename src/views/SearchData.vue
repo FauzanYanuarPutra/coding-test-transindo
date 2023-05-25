@@ -30,7 +30,7 @@
             <div class="w-[70px]  lg:w-[100px] lg:relative absolute lg:mt-0 mt-[-60px]  mr-5  h-full"><img :src="'assets/' + data.logo" alt="{{ data }}"></div>
               <div>
                   <div class="flex items-center  mt-5 lg:mt-0">
-                  <h1 class="   mr-5 text-[18px] primary-color">{{ data.company}}</h1>
+                  <h1 class="   mr-5 text-[18px] primary-color">{{data.company}}</h1>
                   <div class="flex items-center   mr-2 pt-1 px-3 text-white bg-[#5ba4a4] rounded-full" v-if="data.new">NEW!</div>
                   <div class="   mr-2  pt-1 px-3 text-white bg-[#2c3a3a] rounded-full" v-if="data.featured">FEATURED</div>
                 
