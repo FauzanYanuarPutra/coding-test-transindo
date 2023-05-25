@@ -9,6 +9,7 @@
     "test:unit": "vitest"
   },
   "dependencies": {
+    "@vueform/multiselect": "^2.6.2",
     "jquery": "^3.7.0",
     "v-select2-component": "^0.4.7",
     "vue": "^3.3.2",
