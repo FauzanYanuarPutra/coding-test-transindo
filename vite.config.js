@@ -5,7 +5,7 @@ import vue from "@vitejs/plugin-vue";
 
 // https://vitejs.dev/config/
 export default defineConfig({
-  base: "/pencarian-data",
+  base: "/coding-test-transindo",
   plugins: [vue()],
   resolve: {
     alias: {
