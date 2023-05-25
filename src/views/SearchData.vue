@@ -4,10 +4,10 @@
       <div class="w-[100%] bg-black flex">
 
         <select class="js-example-basic-multiple w-full" name="states[]" multiple="multiple"  v-model="cariData">
-          <option v-bind:value="user.id" :key="user.id" v-for="user in users" >{{  user.company }}</option>
-          <option v-bind:value="user.id" :key="user.id" v-for="user in users" >{{  user.position }}</option>
-          <option v-bind:value="user.id" :key="user.id" v-for="user in users">{{  user.role }}</option>
-          <option v-bind:value="user.id" :key="user.id" v-for="user in users" >{{  user.level }}</option>
+          <option v-bind:value="user.company" :key="user.id" v-for="user in users" >{{  user.company }}</option>
+          <option v-bind:value="user.position" :key="user.id" v-for="user in users" >{{  user.position }}</option>
+          <option v-bind:value="user.role" :key="user.id" v-for="user in users">{{  user.role }}</option>
+          <option v-bind:value="user.level" :key="user.id" v-for="user in users" >{{  user.level }}</option>
           <option v-bind:value="language" v-for="language in users.languages" >{{  language }}</option>
           <option v-bind:value="tool" v-for="tool in users.tools" >{{  tool }}</option>
         </select>
@@ -15,15 +15,17 @@
       <div class=" pl-5 font-black cursor-pointer" @click="getSelectedOptions">Cari</div>
     </div>
 
+    <!-- <h1>{{ cariData }}</h1> -->
+
 
     <div class="data my-[60px] " v-for="data in users">
       <div class="mt-3 py-8 bg-white w-full shadow-xl  rounded-md" :class="{ 'border-l-[5px] border-[#5ba4a4]': data.new && data.featured }">
       
         
-        <div class=" lg:hidden foto w-[70px] h-[70px] rounded-full  relative  top-[-60px] mb-[-50px] right-[-20px]"><img :src="'../src/assets/images/' + data.logo" alt=""></div>
+        <div class=" lg:hidden foto w-[70px] h-[70px] rounded-full  relative  top-[-60px] mb-[-50px] right-[-20px]"><img :src="'../src/assets/' + data.logo" alt=""></div>
         <div class="mx-5 lg:flex lg:justify-end items-center">
             <div class="informasi flex  w-[100%]">
-            <div class="w-[100px]  lg:block hidden  mr-5  h-full"><img :src="'../src/assets/images/' + data.logo" alt=""></div>
+            <div class="w-[100px]  lg:block hidden  mr-5  h-full"><img :src="'../src/assets/' + data.logo" alt=""></div>
               <div>
                   <div class="flex items-center  ">
                   <h1 class="   mr-5 text-[18px] primary-color">{{ data.company}}</h1>
@@ -103,7 +105,7 @@ export default {
   data() {
     return {
       users: [],
-      cariData: [],
+      cariData: ['Fullstack Developer'],
       selectedItems: [],
       
     };
