@@ -27,7 +27,7 @@
        
         <div class="mx-5 lg:flex lg:justify-end items-center">
             <div class="informasi flex  w-[100%]">
-            <div class="w-[70px]  lg:w-[100px] lg:relative absolute lg:mt-0 mt-[-60px]  mr-5  h-full"><img :src="'assets/' + data.logo" alt="{{ data }}"></div>
+            <div class="w-[70px]  lg:w-[100px] lg:relative absolute lg:mt-0 mt-[-60px]  mr-5  h-full"><img :src="'./' + data.logo" alt="{{ data }}"></div>
               <div>
                   <div class="flex items-center  mt-5 lg:mt-0">
                   <h1 class="   mr-5 text-[18px] primary-color">{{data.company}}</h1>
