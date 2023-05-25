@@ -17,6 +17,8 @@ import SearchData from './views/SearchData.vue'
 
 </template>
 
+
+
 <style>
 
 .bg {
