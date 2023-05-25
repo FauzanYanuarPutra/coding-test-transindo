@@ -1,13 +1,15 @@
 <template>
-  <div class="w-[80%] lg:w-[1440px] lg:px-[120px]">
-    <div class=" mx-5 mb-20 bg-white flex justify-between items-center rounded-md p-5 shadow-xl">
+  <div class="w-[95%] sm:w-[80%] lg:w-[1440px] lg:px-[120px]">
+    <div class="  mb-20 bg-white flex justify-between items-center rounded-md p-5 shadow-xl">
       <div class="w-[100%] bg-black flex">
         <select class="js-example-basic-multiple w-full" name="states[]" multiple="multiple" >
-          <option value="AL" v-for="user in users" >{{  user.name }}</option>
-          <option value="AL" v-for="user in users" >{{  user.role }}</option>
-          <option value="AL" v-for="user in users" >{{  user.level }}</option>
-          <option value="AL" v-for="user in users" >{{  user.leanguages }}</option>
-          <option value="AL" v-for="user in users" >{{  user.tools }}</option>
+          <!-- <option value="AL" v-for="user in users" >{{  user.company }}</option> -->
+          <!-- <option value="AL" v-for="user in users" >{{  user.position }}</option> -->
+          <option value="AL" v-for="role in users" v-if="role">{{  role.role }}</option>
+          <!-- <option value="AL" v-for="user in users" >{{  user.level }}</option> -->
+          <!-- <option value="AL" v-for="language in users.languages" >{{  language }}</option> -->
+          <!-- <option value="AL" v-for="tool in users.tools" >{{  tool }}</option> -->
+
 
         </select>
       </div>
@@ -15,7 +17,7 @@
     </div>
 
 
-    <div class="data my-5 mx-5" v-for="data in users">
+    <div class="data my-5 " v-for="data in users">
       <div class="mt-3 py-8 bg-white w-full shadow-xl  rounded-md" :class="{ 'border-l-[5px] border-[#5ba4a4]': data.new && data.featured }">
       
         
