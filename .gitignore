@@ -9,15 +9,15 @@ lerna-debug.log*
 
 node_modules
 .DS_Store
-dist
+# dist
 dist-ssr
 coverage
 *.local
 
-/dist
-/node_modules
+# /dist
+# /node_modules
 
-*.svg
+# *.svg
 
 /cypress/videos/
 /cypress/screenshots/

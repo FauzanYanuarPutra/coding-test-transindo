@@ -15,7 +15,6 @@
           placeholder="Cari data yang diperlukan"
         />
       </div>
-      <div class="pl-5 font-black cursor-pointer" @click="getSelectedOptions">Cari</div>
     </div>
 
     <!-- <h1>{{ cariData }}</h1> -->
@@ -25,7 +24,7 @@
       <div class="mt-3 py-8 bg-white w-full shadow-xl  rounded-md" :class="{ 'border-l-[5px] border-[#5ba4a4]': data.new && data.featured }">
       
         
-        <div class=" lg:hidden foto w-[70px] h-[70px] rounded-full  relative  top-[-60px] mb-[-50px] right-[-20px]"><img :src="data.logo" alt="{{ data.logo }}"></div>
+        <div class=" lg:hidden foto w-[70px] h-[70px] rounded-full  relative  top-[-60px] mb-[-50px] right-[-20px]"><img :src="data.logo"></div>
         <div class="mx-5 lg:flex lg:justify-end items-center">
             <div class="informasi flex  w-[100%]">
             <div class="w-[100px]  lg:block hidden  mr-5  h-full"><img :src="data.logo" alt="{{ data.logo }}"></div>
