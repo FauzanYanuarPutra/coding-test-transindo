@@ -24,10 +24,10 @@
       <div class="mt-3 py-8 bg-white w-full shadow-xl  rounded-md" :class="{ 'border-l-[5px] border-[#5ba4a4]': data.new && data.featured }">
       
         
-        <!-- <div class=" lg:hidden foto w-[70px] h-[70px] rounded-full  relative  top-[-60px] mb-[-50px] right-[-20px]"><img :src="'public/images/' + data.logo" alt="{{ data.logo }}"></div> -->
+       
         <div class="mx-5 lg:flex lg:justify-end items-center">
             <div class="informasi flex  w-[100%]">
-            <div class="w-[70px]  lg:w-[100px] lg:relative absolute lg:mt-0 mt-[-60px]  mr-5  h-full"><img :src="'./public/' + data.logo" alt="{{ data.logo }}"></div>
+            <img v-src="'./public/' + data.logos" class="w-[70px]  lg:w-[100px] lg:relative absolute lg:mt-0 mt-[-60px]  mr-5  h-full">
               <div>
                   <div class="flex items-center  mt-5 lg:mt-0">
                   <h1 class="   mr-5 text-[18px] primary-color">{{ data.company}}</h1>
